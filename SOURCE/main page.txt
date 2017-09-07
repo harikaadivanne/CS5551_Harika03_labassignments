@@ -1,0 +1,32 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        img {
+            border-radius:50%;
+        }
+    </style>
+</head>
+<body style="background-image:url(&#39;background.jpg&#39;);background-size: 100% 100%;">
+<center>
+    <b>
+        <center>Welcome</center>
+    </b>
+
+    <div class="imgcontainer">
+        <img src="file:///C:/Users/harika%20adivanne/Downloads/abi.jpg" alt="Abi" style="width:200px">
+    </div>
+
+    <div class="container">
+        <form action="file:///C:/Users/harika%20adivanne/Downloads/Login%20page.html">
+            Already have an Account:
+            <input type="submit" value="Login"><br>
+        </form>
+        <form action="file:///C:/Users/harika%20adivanne/Downloads/Register%20page.html">
+            To create New:
+            <input type="submit" value="Register"><br>
+        </form>
+    </div>
+
+</center>
+
+</body></html>
