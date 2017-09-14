@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background: url("img/img.jpeg");
+            background-size: cover;
+        }
+        .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+        </STYLE>
+
+<body><form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <CENTER><legend>Registeration Form</legend></CENTER>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">USER NAME</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="USER NAME" class="form-control input-md" required="">
+                            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Email ID</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="Enter Email Id" class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">PASSWORD</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="PASSWORD" class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">RE-CONFIRM PASSWORD</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="RE-CONFIRM PASSWORD" class="form-control input-md" required="">
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Contact number(optional) </label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="number" class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="selectbasic">SEX</label>
+            <div class="col-md-4">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                    <option value="1">MALE</option>
+                    <option value="2">FEMALE</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- File Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="filebutton">Photo upload</label>
+            <div class="col-md-4">
+                <input id="filebutton" name="filebutton" class="input-file" type="file">
+            </div>
+        </div>
+        <CENTER><input type="submit" value="Sign In" class="button" onclick="window.location='index.html';"></CENTER></br>
+
+    </fieldset>
+</form>
+
+</body>
+</html>

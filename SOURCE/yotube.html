@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+<head>
+    <title>MashUp Application</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awesome videos!" />
+
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <style>
+
+        #pac-container {
+            padding-bottom: 12px;
+            margin-right: 12px;
+        }
+        .pac-controls {
+            display: inline-block;
+            padding: 5px 11px;
+        }
+        .pac-controls label {
+            font-family: "Arial Black";
+            font-size: 13px;
+            font-weight: 300;
+        }
+        #pac-input {
+            background-color: #fff;
+            font-family: WHITE;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 400px;
+        }
+        #pac-input:focus {
+            border-color: #4d90fe;
+        }
+        .header h1 {
+            font-size: 2.8em;
+            font-weight: 120;
+            text-align: center;
+            color: WHITE;
+        }
+        .col2 {
+            overflow: hidden;
+            float: center;
+            width: 68%;
+            left: 2%;
+        }
+        .btn {
+            background-color: #de615e;
+            padding: 14px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 3px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+            color: white;
+        }
+        .btn2{
+            background-color: #de615e;
+            padding: 14px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 20px 12px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+            color: white;
+        }
+        .col1 {
+            overflow: hidden;
+            float: center;
+            text-align: left;
+            width: 20%;
+            left: 10%;
+            background-color: whitesmoke;
+        }
+        .dropdown-content {
+            background-color: #de615e;
+            min-width: 160px;
+            padding: 12px 16px;
+            color: white;
+        }
+        #outerdiv {
+            width: 90%;
+            height: 90%;
+            position:fixed;
+            text-align:center;
+        }
+        .form-title{
+            font-size: 250%;
+            font-style: italic;
+            font-weight: 900;
+
+        }
+        html,body{
+            background-image: url("img/SS.jpg");
+            background-size: cover;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/gooogle.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script src="js/yandex.js"></script>
+</head>
+
+<body ng-app="Translate">
+<div class="header"><h1>YOUTUBE SEARCH</h1></div>
+<div ng-controller="Translatecontroller">
+    <div class="row" align="center">
+        <form action="#">
+            <input type="text" id="pac-input" placeholder="Search" class="form-control">
+            <button class="btn">Search</button><br>
+            <select name="to" id="lang" class="dropdown-content">
+                <option selected disabled>SELECT THE LANGUAGE</option>
+                <option value="te">Telugu </option>
+                <option value="ar">Tamil</option>
+                <option value="hi">Hindi</option>
+            </select>
+            <button class="btn2" ng-click="translate()" >Translate</button>
+            <p><h4><b>Translated word:&nbsp&nbsp{{output}}</b></h4></p>
+            <div class="col2">
+                <div id="results"></div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
